@@ -32,4 +32,5 @@ let sliced3 = arr5.slice(-1)
 
 let arr6 = [1, 2]
 let arr7 = [3, 4]
+
 let concatedArr = arr6.concat(arr7)
