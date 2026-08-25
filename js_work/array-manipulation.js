@@ -24,13 +24,14 @@ const newLength2 = arr4.unshift(0);
 // 마치 가위처럼, 배열의 특정 범위를 잘라내서 새로운 배열로 반환
 let arr5 = [1, 2, 3, 4, 5];
 let sliced = arr5.slice(2, 5);
-let sliced2 = arr5.slice(2)
-let sliced3 = arr5.slice(-1)
+let sliced2 = arr5.slice(2);
+let sliced3 = arr5.slice(-1);
 
 // 6. concat
 // 두 개의 서로 다른 배열을 이어 붙여서 새로운 배열을 반환
 
-let arr6 = [1, 2]
-let arr7 = [3, 4]
+let arr6 = [1, 2];
+let arr7 = [3, 4];
 
-let concatedArr = arr6.concat(arr7)
+let concatedArr = arr6.concat(arr7);
+console.log(concatedArr);
