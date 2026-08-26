@@ -2,7 +2,6 @@ function add10(num) {
   const promise = new Promise((resolve, reject) => {
     // 비동기 작업 실행하는 함수
     // executer
-
     setTimeout(() => {
       if (typeof num === "number") {
         resolve(num + 10);
