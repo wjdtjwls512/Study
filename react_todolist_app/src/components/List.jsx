@@ -1,10 +1,10 @@
 import "./List.css";
 import Todoitem from "./Todoitem";
 import { useState, useMemo, useContext } from "react";
-import { ToDoContext } from "../App";
+import { ToDoStateContext } from "../App";
 
 const List = () => {
-  const { todos } = useContext(ToDoContext);
+  const todos = useContext(ToDoStateContext);
 
   const [search, setSearch] = useState("");
 
