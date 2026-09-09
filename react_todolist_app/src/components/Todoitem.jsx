@@ -1,7 +1,10 @@
 import "./Todoitem.css";
-import { memo } from "react";
+import { memo, useContext } from "react";
+import { ToDoContext } from "../App";
 
-const Todoitem = ({ id, isDone, content, date, onUpdate, onDelete }) => {
+const Todoitem = ({ id, isDone, content, date }) => {
+  const { onUpdate, onDelete } = useContext(ToDoContext);
+
   const onChangeCheckbx = () => {
     onUpdate(id);
   };
@@ -34,4 +37,4 @@ const Todoitem = ({ id, isDone, content, date, onUpdate, onDelete }) => {
 //     return true
 // });
 
-export default memo(Todoitem)
+export default memo(Todoitem);
