@@ -51,7 +51,7 @@ function App() {
   const idRef = useRef(3);
 
   // 새로운 일기 추가
-  const onCrearte = (createdDate, emotionId, content) => {
+  const onCreate = (createdDate, emotionId, content) => {
     dispatch({
       type: "CREATE",
       data: {
@@ -86,7 +86,7 @@ function App() {
   return (
     <>
       <DiaryStateContext.Provider value={data}>
-        <DiaryDispatchContext value={{ onCrearte, onUpdate, onDelete }}>
+        <DiaryDispatchContext value={{ onCreate, onUpdate, onDelete }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/new" element={<New />} />
